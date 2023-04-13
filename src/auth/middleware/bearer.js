@@ -1,6 +1,6 @@
 'use strict';
 
-const { readers } = require('../models');
+const { readers } = require('../../../src/readers');
 
 module.exports = async (req, res, next) => {
   try{
