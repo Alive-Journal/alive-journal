@@ -1,7 +1,7 @@
 'use strict';
 
 const express = require('express');
-const dataModules = require('../../src/index');
+const dataModules = require('../auth/models/index');
 const router = express.Router();
 
 router.param('model', (req, res, next) => {

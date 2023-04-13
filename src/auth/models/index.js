@@ -2,7 +2,7 @@
 
 const { Sequelize, DataTypes } = require('sequelize');
 
-const blogModel = require('./auth/models/blog/model')
+const blogModel = require('./blog/model')
 const Collection = require('./data-collection');
 const userModel = require('./readers');
 
