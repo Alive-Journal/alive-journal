@@ -1,6 +1,6 @@
 'use strict';
 
-const userInventoryModel = (sequelize, DataTypes) => sequelize.define('Clothes', {
+const userInventoryModel = (sequelize, DataTypes) => sequelize.define('users', {
   users: { type: DataTypes.STRING, required: true },
   addUser: { type: DataTypes.STRING, required: true },
   getUser: { type: DataTypes.STRING, required: true },

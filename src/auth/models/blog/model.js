@@ -1,6 +1,6 @@
 'use strict';
 
-const blogModel = (sequelize, DataTypes) => sequelize.define('books', {
+const blogModel = (sequelize, DataTypes) => sequelize.define('blogs', {
   author: { type: DataTypes.STRING, required: true },
   title: { type: DataTypes.STRING, required: false },
   content: { type: DataTypes.STRING, required: false },
