@@ -9,11 +9,11 @@ const userModel = require('./readers');
 const DATABASE_URL = process.env.NODE_ENV === 'test' ? 'sqlite:memory' : process.env.DATABASE_URL;
 
 const sequelizeDataBase = new Sequelize(DATABASE_URL);
-const blog = blogModel(sequelizeDataBase, DataTypes);
+const blogs = blogModel(sequelizeDataBase, DataTypes);
 
 module.exports = {
   db: sequelizeDataBase,
-  books: new Collection(blog),
+  blogs: new Collection(blogs),
 
   readers: userModel(sequelizeDataBase, DataTypes),
 };
