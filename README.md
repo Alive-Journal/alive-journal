@@ -13,7 +13,7 @@
 
 ## UML
 
-- ![Project UML](/UML2.png)
+![Project UML](/UML2.png)
 
 ## Successful Testing
 
