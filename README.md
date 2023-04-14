@@ -13,7 +13,7 @@
 
 ## UML:
 
-- In progress
+- ![Project UML](/UML.png)
 
 ## Successful Deployed Server on Render:
 

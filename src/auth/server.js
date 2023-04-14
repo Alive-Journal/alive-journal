@@ -16,7 +16,7 @@ const authRoutes = require('../auth/routes.js');
 const app = express();
 
 // App Level MW
-//app.use(cors());
+// app.use(cors());
 
 app.use(express.json());
 app.use(logger);
