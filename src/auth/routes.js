@@ -37,7 +37,7 @@ authRouter.get('/readers', bearerAuth, permissions('delete'), async (req, res, n
 });
 
 authRouter.get('/secret', bearerAuth, async (req, res, next) => {
-  res.status(200).send('Welcome to the secret area')
+  res.status(200).send('Welcome to Bloggers Paradise!')
 });
 
 module.exports = authRouter;
