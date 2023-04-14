@@ -8,8 +8,9 @@ const express = require('express');
 // Esoteric Resources
 const errorNotFound = require('./error-handlers/404');
 const errorHandler = require('./error-handlers/500.js');
-const logger = require('./middleware/logger.js')
-const v1Routes = require('../routes/v1.js')
+const logger = require('./middleware/logger.js');
+const v1Routes = require('../routes/v1.js');
+const v2Routes = require('../routes/v2');
 const authRoutes = require('../auth/routes.js');
 
 // Prepare the express app
@@ -24,8 +25,9 @@ app.use(logger);
 
 // Routes
 app.use(authRoutes);
-// port 3001 = http://localhost:3001/api/v1/books
+// port 3001 = http://localhost:3001/api/v1/blog
 app.use('/api/v1', v1Routes);
+app.use('/api/v1', v2Routes);
 
 // Catchalls
 app.use('*', errorNotFound);
