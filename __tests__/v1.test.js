@@ -16,8 +16,8 @@ afterAll(async () => {
 });
 
 describe('v1 routes', () => {
-  it('creates a books item', async () => {
-    let response = await request.post('/api/v1/books').send({
+  it('creates a blogs item', async () => {
+    let response = await request.post('/api/v1/blogs').send({
       name: 'The Dark Knight',
       price: 200,
       type: 'action',
@@ -26,15 +26,15 @@ describe('v1 routes', () => {
     expect(response.body.name).toEqual('The Dark Knight');
   });
 
-  it('gets all books items', async () => {
-    let response = await request.get('/api/v1/books');
+  it('gets all blogs items', async () => {
+    let response = await request.get('/api/v1/blogs');
     expect(response.status).toEqual(200);
     expect(response.body[0].name).toEqual('The Dark Knight');
   },
   );
 
-  it('updates a books item', async () => {
-    let response = await request.put('/api/v1/books/1').send({
+  it('updates a blogs item', async () => {
+    let response = await request.put('/api/v1/blogs/1').send({
       name: 'The Dark Knight',
       price: 200,
       type: 'action',
