@@ -11,6 +11,8 @@
 - Kyle Freemantle
 - Ryan "Son of Batman" Bagan
 
+[GitHub Pulse](https://github.com/Alive-Journal/alive-journal/pulse)
+
 ## UML
 
 ![Project UML](/UML2.png)
