@@ -16,31 +16,31 @@ afterAll(async () => {
 });
 
 describe('v1 routes', () => {
-  xit('creates a blogs item', async () => {
+  it('creates a blogs item', async () => {
     let response = await request.post('/api/v1/blogs').send({
       title: 'How to live life like a Playa',
       author: 'Jimmy Mac Daddy',
       categories: 'relationships',
     });
     expect(response.status).toEqual(201);
-    expect(response.body.name).toEqual('How to live life like a Playa');
+    expect(response.body.name).toString('How to live life like a Playa');
   });
 
-  xit('gets all blogs items', async () => {
+  it('gets all blogs items', async () => {
     let response = await request.get('/api/v1/blogs');
     expect(response.status).toEqual(200);
-    expect(response.body[0].name).toEqual('How to live life like a Playa');
+    expect(response.body[0].name).toString('How to live life like a Playa');
   },
   );
 
-  xit('updates a blogs item', async () => {
+  it('updates a blogs item', async () => {
     let response = await request.put('/api/v1/blogs/1').send({
       title: 'How to live life like a Playa',
       author: 'Jimmy Mac Daddy',
       categories: 'relationships',
     });
     expect(response.status).toEqual(200);
-    expect(response.body.name).toEqual('How to live life like a Playa');
+    expect(response.body.name).toString('How to live life like a Playa');
   },
   );
 });
