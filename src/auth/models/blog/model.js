@@ -5,7 +5,7 @@ const blogModel = (sequelize, DataTypes) => sequelize.define('blogs', {
   title: { type: DataTypes.STRING, required: false },
   content: { type: DataTypes.STRING, required: false },
   categories: { type: DataTypes.ENUM('tech', 'education', 'nature', 'world news'), defaultValue: 'tech', allowNull: false},
-  time: { type: DataTypes.STRING, allowNull: false},
+  time: { type: DataTypes.STRING, allowNull: true},
 });
 
 module.exports = blogModel;
